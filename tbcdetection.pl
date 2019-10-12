@@ -41,6 +41,36 @@ disease_p03 :-
     verify(has_g012),
     verify(has_g013).
 
+disease_p04 :-
+    verify(has_g010),
+    verify(has_g014),
+    verify(has_g015).
+disease_p05 :-
+    verify(has_g010),
+    verify(has_g016),
+    verify(has_g017),
+    verify(has_g018),
+    verify(has_g019),
+    verify(has_g020).
+disease_p06 :-
+    verify(has_g021),
+    verify(has_g022),
+    verify(has_g023),
+    verify(has_g024).
+disease_p07 :-
+    verify(has_g021),
+    verify(has_g025),
+    verify(has_g026),
+    verify(has_g027).
+disease_p08 :-
+    verify(has_g028),
+    verify(has_g029),
+    verify(has_g030).
+disease_p09 :-
+    verify(has_g031),
+    verify(has_g032),
+    verify(has_g033),
+    verify(has_g034).
 
 
 /*how to ask questions*/
@@ -78,6 +108,18 @@ disease(disease_p02):-
     write('Aspergilosis Bronkopulmoner').
 disease(disease_p03):-
     write('Atelektasis').
+disease(disease_p04):-
+    write('Berilliosis').
+disease(disease_p05):-
+    write('Bissinosis').
+disease(disease_p06):-
+    write('Emboli Paru').
+disease(disease_p07):-
+    write('Pneumonia').
+disease(disease_p08):-
+    write('Histiotosis X').
+disease(disease_p09):-
+    write('Granulomatosis Pulmoner').
 disease(disease_unknown):-
     write('tidak memiliki penyakit').
 
@@ -109,6 +151,46 @@ symptomp(has_g013):-
     write('batuk kering').
 symptomp(has_g014):-
     write('berat badan turun secara drastis').
+symptomp(has_g015):-
+    write('badan terasa lemas').
+symptomp(has_g016):-
+    write('ada riwayat pemaparan debu').
+symptomp(has_g017):-
+    write('kondisi memburuk jika berada di tempat kerja').
+symptomp(has_g018):-
+    write('kondisi membaik jika jauh dari tempat kerja').
+symptomp(has_g019):-
+    write('dada terasa sesak').
+symptomp(has_g020):-
+    write('batuk pendek pendek').
+symptomp(has_g021):-
+    write('pernafasan cepat').
+symptomp(has_g022):-
+    write('denyut jantung cepat').
+symptomp(has_g023):-
+    write('keluar keringat (berkeringat)').
+symptomp(has_g024):-
+    write('pusing').
+symptomp(has_g025):-
+    write('batuk berdahak kadang dahak disertai nanah').
+symptomp(has_g026):-
+    write('kadang disertai rasa mual dan muntah').
+symptomp(has_g027):-
+    write('badan mengigil').
+symptomp(has_g028):-
+    write('volume air seni meningkat').
+symptomp(has_g029):-
+    write('kadang disertai nyeri tulang').
+symptomp(has_g030):-
+    write('sering merasa haus walaupun banyak minum').
+symptomp(has_g031):-
+    write('mudah merasa lelah').
+symptomp(has_g032):-
+    write('tidak enak badan (malaise).').
+symptomp(has_g033):-
+    write('terjadi pendarahan di hidung').
+symptomp(has_g034):-
+    write('ada lukas disekitar hidung').
 
 switch(X, [Val:Goal|Cases]) :-
     ( X=Val ->
